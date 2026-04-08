@@ -12,8 +12,9 @@
     --color-text-tertiary: #999;
     --color-bg: #fff;
     --color-border: #e5e5e5;
+    --color-accent: #0066ff;
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    --container-width: 820px;
+    --container-width: 1078px;
 }
 
 html {
@@ -39,6 +40,10 @@ a {
     max-width: var(--container-width);
     margin: 0 auto;
     padding: 0 32px;
+}
+
+.container--narrow {
+    max-width: 640px;
 }
 
 /* Header */
@@ -101,15 +106,17 @@ a {
 
 .btn {
     display: inline-block;
+    padding: 12px 24px;
+    background: var(--color-accent);
+    color: #fff;
     font-size: 14px;
-    color: var(--color-text);
-    border-bottom: 1px solid var(--color-text);
-    padding-bottom: 2px;
+    font-weight: 500;
+    border-radius: 6px;
     transition: opacity 0.2s;
 }
 
 .btn:hover {
-    opacity: 0.6;
+    opacity: 0.85;
 }
 
 /* Projects */
@@ -125,9 +132,6 @@ a {
 }
 
 .project {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
     padding: 48px 0;
     border-bottom: 1px solid var(--color-border);
 }
@@ -136,19 +140,27 @@ a {
     border-bottom: none;
 }
 
-.project:nth-child(even) {
-    direction: rtl;
-}
-
-.project:nth-child(even) > * {
-    direction: ltr;
-}
-
 .project__title {
     font-size: 22px;
     font-weight: 500;
-    margin-bottom: 14px;
+    margin-bottom: 24px;
     letter-spacing: -0.01em;
+}
+
+.project__image {
+    background: var(--color-border);
+    border-radius: 4px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-secondary);
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+
+.project__content {
+    max-width: 640px;
 }
 
 .project__description {
@@ -195,17 +207,6 @@ a {
 
 .project__link:hover {
     opacity: 0.6;
-}
-
-.project__image {
-    background: var(--color-border);
-    border-radius: 4px;
-    min-height: 280px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-text-secondary);
-    font-size: 13px;
 }
 
 /* About */
@@ -310,13 +311,11 @@ a {
     }
 
     .project {
-        grid-template-columns: 1fr;
-        gap: 20px;
         padding: 32px 0;
     }
 
-    .project:nth-child(even) {
-        direction: ltr;
+    .project__image {
+        min-height: 240px;
     }
 
     .project__title {
