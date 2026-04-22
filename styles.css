@@ -67,7 +67,12 @@ a {
 }
 
 .logo__img {
-    height: 28px;
+    height: 24px;
+    width: auto;
+}
+
+.footer__logo-img {
+    height: 20px;
     width: auto;
 }
 
