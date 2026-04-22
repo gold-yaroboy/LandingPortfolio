@@ -607,7 +607,15 @@ a {
 
 .approach-item {
     padding-left: 24px;
-    border-left: 3px solid var(--color-border);
+    position: relative;
+}
+
+.approach-item::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--color-text);
+    font-weight: 700;
 }
 
 .approach-item h3 {
