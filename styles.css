@@ -233,35 +233,40 @@ a {
 
 .about__card {
     padding: 28px 32px;
-    border: 1px solid var(--color-border);
-    border-radius: 4px;
-    transition: border-color 0.2s;
+    background: #F5F5F7;
+    border-radius: 24px;
+    transition: opacity 0.2s;
 }
 
 .about__card:hover {
-    border-color: var(--color-text-secondary);
+    opacity: 0.85;
 }
 
 .about__card h3 {
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 500;
-    margin-bottom: 6px;
+    margin-bottom: 12px;
 }
 
 .about__card p {
     font-size: 14px;
     color: var(--color-text-secondary);
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     line-height: 1.5;
 }
 
 .about__card-link {
-    font-size: 14px;
-    color: var(--color-text);
+    display: inline-block;
+    padding: 12px 24px;
+    background: #FFFFFF;
+    color: #1C1B1F;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 12px;
 }
 
 .about__card-link:hover {
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 /* Footer */
@@ -448,7 +453,7 @@ a {
 .project-screens__grid {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 80px;
 }
 
 .project-screens__item {
