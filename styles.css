@@ -448,7 +448,7 @@ a {
 .project-screens__grid {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 48px;
 }
 
 .project-screens__item {
