@@ -116,7 +116,7 @@ a {
 
 /* Hero */
 .hero {
-    padding: 100px 0 60px;
+    padding: 100px 0 40px;
 }
 
 .hero__title {
@@ -131,7 +131,7 @@ a {
     font-size: 28px;
     color: var(--color-text-secondary);
     max-width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     line-height: 1.5;
     font-weight: 400;
 }
