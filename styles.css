@@ -598,6 +598,22 @@ a {
     margin-top: 32px;
 }
 
+.approach-list {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.approach-item {
+    padding-left: 24px;
+    border-left: 3px solid var(--color-border);
+}
+
+.approach-item h3 {
+    margin-top: 0;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
     .container {
