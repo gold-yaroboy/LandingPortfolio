@@ -581,6 +581,41 @@ a {
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 12px;
+    margin-top: 0;
+}
+
+.about-role p {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.approach-list {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.approach-item {
+    padding-left: 24px;
+    position: relative;
+}
+
+.approach-item::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+.approach-item h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-text);
+    margin: 0 0 12px 0;
 }
 
 .about-role p {
@@ -619,8 +654,8 @@ a {
 }
 
 .approach-item h3 {
-    margin-top: 0;
-    margin-bottom: 12px;
+    margin: 0 0 12px 0;
+    padding-top: 0;
 }
 
 /* Mobile */
