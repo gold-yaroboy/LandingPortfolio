@@ -180,13 +180,14 @@ a {
 }
 
 .project__content {
-    max-width: 640px;
+    max-width: 100%;
 }
 
 .project__description {
     color: var(--color-text-secondary);
     margin-bottom: 20px;
     line-height: 1.7;
+    max-width: 100%;
 }
 
 .project__highlights {
@@ -475,6 +476,7 @@ a {
     line-height: 1.7;
     color: var(--color-text-secondary);
     margin-bottom: 16px;
+    max-width: 100%;
 }
 
 .project-content ul {
@@ -549,7 +551,7 @@ a {
     line-height: 1.8;
     color: var(--color-text-secondary);
     margin-bottom: 20px;
-    max-width: 800px;
+    max-width: 100%;
 }
 
 .about-hero {
@@ -603,6 +605,7 @@ a {
     color: var(--color-text-secondary);
     line-height: 1.5;
     margin-bottom: 0;
+    max-width: 100%;
 }
 
 .approach-list {
@@ -630,6 +633,10 @@ a {
     font-weight: 500;
     color: var(--color-text);
     margin: 0 0 12px 0;
+}
+
+.approach-item p {
+    max-width: 100%;
 }
 
 .about-role p {
