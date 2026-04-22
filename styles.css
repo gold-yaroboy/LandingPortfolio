@@ -119,6 +119,11 @@ a {
     padding: 100px 0 40px;
 }
 
+/* Projects */
+.projects {
+    padding: 40px 0;
+}
+
 .hero__title {
     font-size: 64px;
     font-weight: 500;
